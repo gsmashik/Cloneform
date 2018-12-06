@@ -1,0 +1,33 @@
+<form>
+    <div id="container">
+    <input type="text" value="" /><br />
+    <textarea></textarea><br />
+    <select>
+    <option value="1" selected="selected">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+        </select><br/>    
+    <select>
+        <option>First</option>
+        <option>Second</option>
+        <option>Third</option>
+        </select>  <br/>
+    <input type="checkbox" name="chk"  />Checkbox1<br />
+<input type="checkbox" name="chk" /> Checkbox2 <br />
+</div>  
+<input id="butt" type="button" value="Test" />
+<div id="clonedItem"></div>
+</form> 
+
+
+
+
+
+
+
+
+
+
+
+$('#butt').click(function(){ $('form #container').clone(true).appendTo('#clonedItem');
+});
