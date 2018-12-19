@@ -1,4 +1,12 @@
-<form>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form>
     <div id="container">
     <input type="text" value="" /><br />
     <textarea></textarea><br />
@@ -18,16 +26,24 @@
 <input id="butt" type="button" value="Test" />
 <div id="clonedItem"></div>
 </form> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-
+<script>
+	
 $('#butt').click(function(){ $('form #container').clone(true).appendTo('#clonedItem');
 });
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
